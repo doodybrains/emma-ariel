@@ -1,11 +1,55 @@
+html,body {
+  margin: 0;
+  height: 100%;
+  font-family: "anonymous-pro";
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
-.App-header {
-  height: 150px;
-  padding: 20px;
-  color: white;
+.container {
+  border: 10px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
 
-  h2 {
+  .emma,
+  .ariel {
+    color: black;
+    padding: 20px;
     text-align: center;
-    color: red !important
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      color: black;
+      background: white;
+      padding: 10px;
+      font-size: .8675em;
+    }
+
+    a {
+      display: block;
+      letter-spacing: .09em;
+      text-decoration: none;
+      font-size: .675em;
+      margin-bottom: 10px;
+      color: inherit;
+      width: 100%;
+
+      &:hover {
+        color: mediumpurple;
+      }
+    }
   }
 }
